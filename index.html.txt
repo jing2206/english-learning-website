@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三年级英语学习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到英语学习乐园！</h1>
+        <p>适合三年级的小朋友学习英语</p>
+    </header>
+
+    <main>
+        <section class="modules">
+            <button onclick="showVocabulary()">词汇学习</button>
+            <button onclick="showDialogue()">日常对话</button>
+            <button onclick="showGrammar()">语法基础</button>
+            <button onclick="showTest()">小测试</button>
+        </section>
+
+        <section id="vocabulary" class="learning-module" style="display: none;">
+            <h2>词汇学习</h2>
+            <div class="vocabulary-item">
+                <h3>Father</h3>
+                <img src="father.png" alt="father" />
+                <p>父亲</p>
+                <p>My father is a teacher.</p>
+                <button onclick="playAudio('father.mp3')">播放发音</button>
+            </div>
+            <div class="vocabulary-item">
+                <h3>Mother</h3>
+                <img src="mother.png" alt="mother" />
+                <p>母亲</p>
+                <p>My mother is a doctor.</p>
+                <button onclick="playAudio('mother.mp3')">播放发音</button>
+            </div>
+        </section>
+
+        <section id="dialogue" class="learning-module" style="display: none;">
+            <h2>日常对话</h2>
+            <div class="dialogue-item">
+                <p><strong>A:</strong> Hello! How are you?</p>
+                <p><strong>B:</strong> I'm fine, thank you! And you?</p>
+                <button onclick="playAudio('dialogue.mp3')">播放对话</button>
+            </div>
+        </section>
+
+        <section id="grammar" class="learning-module" style="display: none;">
+            <h2>语法基础</h2>
+            <p>填空练习：I ___ (am) a student.</p>
+            <button onclick="checkAnswer()">提交答案</button>
+        </section>
+
+        <section id="test" class="learning-module" style="display: none;">
+            <h2>小测试</h2>
+            <p>选择正确的答案：What is the capital of China?</p>
+            <button onclick="checkTestAnswer('Beijing')">Beijing</button>
+            <button onclick="checkTestAnswer('Shanghai')">Shanghai</button>
+            <button onclick="checkTestAnswer('Guangzhou')">Guangzhou</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 英语学习乐园</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
